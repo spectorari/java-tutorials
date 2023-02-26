@@ -3,10 +3,28 @@ package inheritance;
 
 // A subclass of TwoDShape for triangles.
 public class Triangle extends TwoDShape {
-	String style;
+	private String style;
+	
+	// Default Constructor
+	Triangle() {
+		super();
+		style = "none";
+	}
+	
+	// Constructor
+	Triangle(String s, double w, double h) {
+		super(w, h);
+		style = s;
+	}
+	
+	// One-Argument Constructor
+	Triangle(double x) {
+		super(x); // call superclass constructor
+		style = "filled";
+	}
 	
 	double area() {
-		return width * height / 2;
+		return getWidth() * getHeight() / 2;
 	}
 	
 	void showStyle() {
