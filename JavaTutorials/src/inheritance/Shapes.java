@@ -5,7 +5,7 @@ public class Shapes {
 	public static void main(String[] args) {
 		// Initialize Objects
 		ColorTriangle t1 = new ColorTriangle("Blue", "filled", 4.0, 4.0);
-		ColorTriangle t2 = new ColorTriangle("Red", "outlined", 8.0, 12.0);
+		ColorTriangle t2 = new ColorTriangle(t1);
 		Rectangle r1 = new Rectangle(8.0);
 
 		// t1

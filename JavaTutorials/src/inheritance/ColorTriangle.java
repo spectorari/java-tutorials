@@ -8,6 +8,11 @@ public class ColorTriangle extends Triangle {
 		color = c;
 	}
 	
+	ColorTriangle(ColorTriangle ob) {
+		super(ob);
+		color = ob.color;
+	}
+	
 	String getColor() { return color; }
 	
 	void showColor() {

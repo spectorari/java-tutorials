@@ -9,12 +9,17 @@ public class Rectangle extends TwoDShape {
 	
 	// Constructor
 	Rectangle(double w, double h) {
-		super(w, h);
+		super(w, h, "rectangle");
 	}
 	
 	// One-Argument Constructor
 	Rectangle(double x) {
-		super(x);
+		super(x, "rectangle");
+	}
+	
+	//Construct an object from an object
+	Rectangle(Rectangle ob) {
+		super(ob);
 	}
 	
 	// Object Methods

@@ -13,14 +13,20 @@ public class Triangle extends TwoDShape {
 	
 	// Constructor
 	Triangle(String s, double w, double h) {
-		super(w, h);
+		super(w, h, "triangle");
 		style = s;
 	}
 	
 	// One-Argument Constructor
 	Triangle(double x) {
-		super(x); // call superclass constructor
+		super(x, "triangle"); // call superclass constructor
 		style = "filled";
+	}
+	
+	// Construct an object from an object.
+	Triangle(Triangle ob) {
+		super(ob); // pass object to TwoDShape constructor
+		style = ob.style;
 	}
 	
 	double area() {
